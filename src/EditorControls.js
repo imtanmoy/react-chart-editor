@@ -231,7 +231,11 @@ class EditorControls extends Component {
         if (isNumeric(payload.transformIndex)) {
           for (let i = 0; i < graphDiv.data.length; i++) {
             if (graphDiv.data[i].uid === payload.traceUid) {
-              graphDiv.data[i].transforms.splice(payload.transformIndex, 1);
+              if (graphDiv.data[i].transforms.length === 1) {
+                delete graphDiv.data[i].transforms;
+              } else {
+                graphDiv.data[i].transforms.splice(payload.transformIndex, 1);
+              }
               if (this.props.onUpdate) {
                 this.props.onUpdate(
                   graphDiv.data.slice(),
