@@ -1,10 +1,13 @@
 [
   "/mocks/aggregate.json",
   "/percy/panelTest.json",
+  "/percy/area.json",
+  "/percy/line.json",
   "/percy/bar.json",
   "/percy/box.json",
   "/percy/histogram.json",
   "/percy/histogram2d.json",
+  "/percy/pie.json",
   "/percy/violin.json",
   "0.json",
   "1.json",

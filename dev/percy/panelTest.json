@@ -36,12 +36,9 @@
         "color": [
           1,
           2,
-          3,
-          4,
-          5,
-          6
+          3
         ],
-        "colorsrc": "ints",
+        "colorsrc": "x1",
         "cmin": 1,
         "cmax": 6,
         "cauto": true,
@@ -67,7 +64,13 @@
         "showscale": true,
         "colorbar": {
           "ticks": "inside"
-        }
+        },
+        "size": [
+          1,
+          2,
+          3
+        ],
+        "sizesrc": "x1"
       }
     },
     {
@@ -106,7 +109,7 @@
       "transforms": [
         {
           "type": "groupby",
-          "groupssrc": "ints",
+          "groupssrc": "x1",
           "groups": [],
           "enabled": true
         },
@@ -114,7 +117,7 @@
           "enabled": true,
           "type": "filter",
           "target": "x",
-          "targetsrc": "ints",
+          "targetsrc": "x1",
           "operation": "[]",
           "value": [
             "0",

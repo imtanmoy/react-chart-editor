@@ -40,7 +40,6 @@ const StyleTracesPanel = (props, {localize: _}) => (
     />
     <NumericFraction label={_('Opacity')} attr="opacity" />
     <ColorPicker label={_('Color')} attr="color" />
-    <NumericFraction label={_('Hole Size')} attr="hole" />
     <Dropdown
       label={_('Histogram Normalization')}
       options={[
@@ -189,6 +188,17 @@ const StyleTracesPanel = (props, {localize: _}) => (
           {label: _('Unsorted'), value: false},
         ]}
       />
+      <Radio
+        label="Direction"
+        attr="direction"
+        options={[
+          {label: _('Clockwise'), value: 'clockwise'},
+          {label: _('Counterclockwise'), value: 'counterclockwise'},
+        ]}
+      />
+      <Numeric label={_('Rotation')} attr="rotation" />
+      <NumericFraction label={_('Hole Size')} attr="hole" />
+      <NumericFraction label={_('Pull')} attr="pull" />
       <Dropdown
         options={[
           {label: _('Show All'), value: 'all'},
@@ -215,6 +225,15 @@ const StyleTracesPanel = (props, {localize: _}) => (
       <ColorPicker label={_('Color')} attr="marker.color" />
       <NumericFraction label={_('Opacity')} attr="marker.opacity" />
       <Numeric label={_('Size')} attr="marker.size" />
+      <Radio
+        label="Size Mode"
+        attr="marker.sizemode"
+        options={[
+          {label: _('Diameter'), value: 'diameter'},
+          {label: _('Area'), value: 'area'},
+        ]}
+      />
+      <Numeric label={_('Minimum Size')} attr="marker.sizemin" />
       <SymbolSelector label={_('Symbol')} attr="marker.symbol" />
       <Numeric label={_('Border Width')} attr="marker.line.width" />
       <ColorPicker label={_('Border Color')} attr="marker.line.color" />

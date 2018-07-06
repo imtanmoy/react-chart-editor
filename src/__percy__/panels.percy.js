@@ -14,8 +14,11 @@ import './percy.css';
  * To specify which panels to test with the mock, add entry to panelsToTest, else all panels will be tested
  */
 const panelsToTest = {
+  area: ['GraphCreatePanel', 'StyleTracesPanel'],
+  line: ['GraphCreatePanel', 'StyleTracesPanel'],
   bar: ['GraphCreatePanel', 'StyleTracesPanel'],
   box: ['GraphCreatePanel', 'StyleTracesPanel'],
+  pie: ['GraphCreatePanel', 'StyleTracesPanel'],
   histogram: ['GraphCreatePanel', 'StyleTracesPanel'],
   histogram2d: ['GraphCreatePanel', 'StyleTracesPanel'],
   violin: ['GraphCreatePanel', 'StyleTracesPanel'],

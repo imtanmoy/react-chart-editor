@@ -490,6 +490,10 @@ export const HoverInfo = connectToContainer(UnconnectedFlaglist, {
       {label: _('Name'), value: 'name'},
     ];
 
+    if (context.container.text && context.container.text.length > 0) {
+      options.push({label: _('Text'), value: 'text'});
+    }
+
     if (
       [
         'heatmap',

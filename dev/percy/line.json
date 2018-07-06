@@ -1,0 +1,61 @@
+{
+  "data": [
+    {
+      "type": "scatter",
+      "mode": "lines+markers+text",
+      "uid": "646107",
+      "fill": "none",
+      "x": [
+        1,
+        2,
+        3
+      ],
+      "xsrc": "x1",
+      "error_x": {
+        "visible": true,
+        "symmetric": true
+      },
+      "error_y": {
+        "visible": true,
+        "symmetric": false
+      },
+      "text": [
+        1,
+        2,
+        3
+      ],
+      "textsrc": "x1",
+      "connectgaps": false,
+      "marker": {
+        "size": [
+          1,
+          2,
+          3
+        ],
+        "sizesrc": "x1"
+      }
+    }
+  ],
+  "layout": {
+    "xaxis": {
+      "range": [
+        0.5394674755645434,
+        6.918975396022918
+      ],
+      "autorange": true,
+      "type": "linear"
+    },
+    "yaxis": {
+      "range": [
+        -0.3445818768486153,
+        5.807609572465717
+      ],
+      "autorange": true
+    },
+    "autosize": true,
+    "hovermode": "closest",
+    "barmode": "group",
+    "barnorm": ""
+  },
+  "frames": []
+}
