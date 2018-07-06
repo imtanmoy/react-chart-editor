@@ -26,7 +26,14 @@ class TransformAccordion extends Component {
       {label: _('Aggregate'), type: 'aggregate'},
     ];
 
-    const transformableCharts = ['scatter', 'bar', 'scattergl'];
+    const transformableCharts = [
+      'scatter',
+      'bar',
+      'scattergl',
+      'histogram',
+      'histogram2d',
+      'box',
+    ];
 
     if (!transformableCharts.includes(fullContainer.type)) {
       return (
